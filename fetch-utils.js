@@ -65,3 +65,13 @@ export async function checkUser() {
     const user = await getUser();
     if (!user) location.replace('../');
 }
+
+export async function logout() {
+    const res = await fetch(`${BASE_URL}/api/v1/users/sessions`, {
+        method: 'DELETE',
+        credentials: 'include'
+    });
+    if (res.ok) {
+        location.replace('../');
+    }
+}
