@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:7890';
+const BASE_URL = 'https://todo-list-1-backend.herokuapp.com';
 
 
 export async function signUpUser(userInfo) {
