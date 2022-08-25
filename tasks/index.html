@@ -11,6 +11,26 @@
     <title>Tasks</title>
 </head>
 <body>
-    
+    <main>
+        <header>
+            <h2>Your Tasks</h2>
+        </header>
+        <div>
+            <button id="logout">Logout</button>
+        </div>
+        <div>
+            <form id="add-task">
+                <label>Task Name</label>
+                <input type="text" name="task-name" required />
+                <label>Description</label>
+                <input type="text" name="task-description" required/>
+                <button>Submit</button>
+            </form>
+        </div>
+        <ul id="task-display"></ul>
+        
+    </main>
+
+    <script type="module" src="tasks.js"></script>
 </body>
 </html>
